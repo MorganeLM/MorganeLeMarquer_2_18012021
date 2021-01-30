@@ -18,6 +18,10 @@ h4{
     margin: 0;
 }
 
+article{
+    box-shadow: 0px 0px 7px grey;
+}
+
 
 /* ---------------------------- HEADER ------------------------------------ */
 header > div{
@@ -70,6 +74,10 @@ h1{
     font-weight: 700;
 }
 
+#filter{
+    padding: 0 20px;
+}
+
 #filter input::placeholder{
     font-size: 1.2em;
     font-weight: 600;
@@ -79,23 +87,41 @@ h1{
 
 #filter input{
     padding: 10px;
-    border: 1px solid #f2f2f2;
+    border: none;
 }
 
-#filter-input{
+#filter input::placeholder{
+    font-family: 'Raleway', sans-serif;
+}
+
+#filter-form{
     display: flex;
+    position: relative;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    width: 100%;
 }
 
 #filter > div div i{
     text-align: center;
     vertical-align: middle;
 }
+
 #map-marker{
+    position: relative;
     background-color: #f2f2f2;
     height: 40px;
     height: 40px;
     width: 40px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.fa-map-marker-alt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #search{
@@ -104,6 +130,9 @@ h1{
     height: 40px;
     width: 40px;
     border-radius: 10px;
+    border: 5px solid #0065FC;
+    position: absolute;
+    right: 0;
 }
 
 #filter{
@@ -111,34 +140,73 @@ h1{
 }
 
 #filter-tags div{
+    position: relative;
     border: 2px solid #d9d9d9;
     border-radius: 30px;
     padding: 10px;
+    padding-left: 40px;
+    margin-bottom: 10px;
     width: max-content;
+    font-weight: bold;
 }
 
 #filter-tags div:hover{
-    border: 2px solid black;
-    font-weight: 600;
+    color: #0065FC;
+    border: 2px solid #DEEBFF;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(-50%, -50%);
+    color: #0065FC;
+    background-color: #DEEBFF ;
+    padding: 14px;
+    border-radius: 50%;
+}
+
+.fa-child{
+    padding: 14px 16px; 
 }
 
 #filter-info{
     display: flex;
 }
 
-#filter-info p:first-child{
-    color:  #0065FC;
-    font-weight: 700;
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    padding: 1px 8px;
-    height: fit-content;
+#filter-info div:first-child{
+    position: relative;
 }
+
+#filter-info .fa-info{
+    font-size: 0.8em;
+    color:  #0065FC;
+    border: 2px solid #d9d9d9;
+    border-radius: 50%;
+    padding: 3px 7px;
+    position: relative;
+    top: 1em;
+}
+
+#filter-info > p{
+    margin-left: 10px;
+}
+
 
 /* LES PLUS POPULAIRES */
 #popular-accommodations{
     padding: 20px;
     background-color: #f2f2f2;
+}
+
+#popular-accommodations > div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+#popular-accommodations > div:first-child > div{
+    align-self:center;
+    font-size: 1.5em;
 }
 
 #popular-accommodations article{
@@ -184,8 +252,91 @@ h1{
 }
 
 
-/* ---------------------------- FOOTER ----------------------------------- */
+/* HEBERGEMENTS A MARSEILLE */
+#accommodation-list{
+    padding: 20px;
+    background-color: #f6f6f6 ;
+}
 
+#accommodation-list article{
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#accommodation-list article div:first-child img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#accommodation-list article div:last-child{
+    padding: 10px;
+}
+
+#accommodation-list article > a > div:last-child p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+  
+}
+
+#accommodation-list article > a > div:last-child div{
+    padding: 0;
+    font-size: 0.7em;
+    color: #0065FC;
+}
+
+#accommodation-list .grey-star{
+    color: #f2f2f2;
+}
+
+#accommodation-list > div:last-child{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+/* ACTIVITES A MARSEILLE */
+#activities{
+    padding: 20px;
+    background-color: #f6f6f6 ;
+}
+
+#activities article{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#activities article div:first-child img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#activities #fort div:first-child img{
+    object-position: center;
+}
+
+
+#activities article h4{
+   padding: 15px;
+}
+
+
+/* ---------------------------- FOOTER ----------------------------------- */
+footer{
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+footer > section{
+    margin-bottom: 40px;
+}
 
 
 
