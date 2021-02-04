@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia</title>
         
-        <script src="fontawesome-free-5.15.2-web/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://kit.fontawesome.com/9f2abbc7b4.js" crossorigin="anonymous"></script> -->
+        <script src="https://kit.fontawesome.com/7246861bbd.js" crossorigin="anonymous"></script>
+        <!-- <script src="fontawesome-free-5.15.2-web/js/all.min.js" crossorigin="anonymous"></script> -->
         <!-- CSS links -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap" rel="stylesheet">
 
@@ -48,10 +50,18 @@
                     <h3>Filtres</h3>
                     <div id="filter-tags">
                         <h3>Filtres</h3>
-                        <div><i class="fas fa-money-bill-wave"></i> Économique</div>
-                        <div><i class="fas fa-child"></i> Familial</div>
-                        <div><i class="fas fa-heart"></i> Romantique</div>
-                        <div><i class="fas fa-dog"></i> Animaux autorisés</div>
+                        <div>
+                            <span><i class="fas fa-money-bill-wave"></i></span> Économique
+                        </div>
+                        <div>
+                            <span><i class="fas fa-child"></i></span> Familial
+                        </div>
+                        <div>
+                            <span><i class="fas fa-heart"></i></span> Romantique
+                        </div>
+                        <div>
+                            <span><i class="fas fa-dog"></i></span> Animaux autorisés
+                        </div>
                     </div>
         
                     <div id="filter-info">
@@ -60,7 +70,7 @@
                     </div>
                 </section>
         
-        <!-- Hébergements -->
+<!-- Hébergements -->
                 <section id="accommodations">
         
                     <aside id="popular-accommodations">
@@ -250,57 +260,63 @@
         
                 </section>
         
-        <!-- Activités -->
+<!-- Activités -->
                 <section id="activities">
                     <h2>Activités à Marseille</h2>
-                    <article id="port">
-                        <a href="#">
-                            <div>
-                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marseille, Vieux Port">
-                            </div>
-                            <h4>Vieux Port</h4>
-                        </a>
-                    </article>
-                    <article id="fort">
-                        <a href="#">
-                            <div>
-                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Marseille, Fort de Pomègues">
-                            </div>
-                            <h4>Fort de Pomègues</h4>
-                        </a>
-                    </article>
-                    <article id="frioul">
-                        <a href="#">
-                            <div>
-                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Marseille, Îles du Frioul">
-                            </div>
-                            <h4>Îles du Frioul</h4>
-                        </a>
-                    </article>
-                    <article id="calanques">
-                        <a href="#">
-                            <div>
-                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Marseille, Parc National des Calanques">
-                            </div>
-                            <h4>Parc National des Calanques</h4>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div>
-                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Marseille, Notre-Dame-de-la-Garde">
-                            </div>
-                            <h4>Notre-Dame-de-la-Garde</h4>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div>
-                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Marseille, Parc Longchamp">
-                            </div>
-                            <h4>Parc Longchamp</h4>
-                        </a>
-                    </article>
+                    <div>
+                        <article id="port">
+                            <a href="#">
+                                <div>
+                                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marseille, Vieux Port">
+                                </div>
+                                <h4>Vieux Port</h4>
+                            </a>
+                        </article>
+                        <div>
+                            <article id="fort">
+                                <a href="#">
+                                    <div>
+                                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Marseille, Fort de Pomègues">
+                                    </div>
+                                    <h4>Fort de Pomègues</h4>
+                                </a>
+                            </article>
+                            <article id="frioul">
+                                <a href="#">
+                                    <div>
+                                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Marseille, Îles du Frioul">
+                                    </div>
+                                    <h4>Îles du Frioul</h4>
+                                </a>
+                            </article>
+                        </div>
+                        <article id="calanques">
+                            <a href="#">
+                                <div>
+                                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Marseille, Parc National des Calanques">
+                                </div>
+                                <h4>Parc National des Calanques</h4>
+                            </a>
+                        </article>
+                        <div>
+                            <article>
+                                <a href="#">
+                                    <div>
+                                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Marseille, Notre-Dame-de-la-Garde">
+                                    </div>
+                                    <h4>Notre-Dame-de-la-Garde</h4>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#">
+                                    <div>
+                                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Marseille, Parc Longchamp">
+                                    </div>
+                                    <h4>Parc Longchamp</h4>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
                 </section>
         
             </main>
