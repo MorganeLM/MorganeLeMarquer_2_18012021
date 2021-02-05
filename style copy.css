@@ -147,7 +147,7 @@ h1{
     display: none;
 }
 
-.filter-tag{
+#filter-tags div{
     position: relative;
     border: 2px solid #d9d9d9;
     border-radius: 30px;
@@ -156,36 +156,38 @@ h1{
     margin-bottom: 10px;
     width: max-content;
     font-weight: bold;
-    margin-right: 20px;
 }
 
-.filter-tag:hover{
+#filter-tags div:hover{
     color: #0065FC;
     border: 2px solid #DEEBFF;
 }
 
-#filter-tags > div:first-of-type{
-    display: flex;
-}
-
-.filter-tag span{
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translate(-50%, -50%);
-    
-    background-color: #DEEBFF ;
-    padding: 21px;
-    border-radius: 50%;
-}
-
+/* ---------------------------------------------------------------------------------------------------------------- To do : cercle sans padding sur le i !-------------------------------------------------------------------------- */
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translate(-50%, -50%);
     color: #0065FC;
+    background-color: #DEEBFF ;
+    padding: 14px;
+    border-radius: 50%;
 }
+
+.fa-child{
+    padding: 14px 16px; 
+}
+
+.fa-money-bill-wave{
+    padding: 14px 12px; 
+}
+
+.fa-dog{
+    padding: 14px 13px; 
+}
+
+/* up changer le style ! */
 
 #filter-info{
     display: flex;

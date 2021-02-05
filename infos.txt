@@ -1,0 +1,9 @@
+En général, nous retrouvons 4 breaking-points :
+
+    Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)
+
+    Tablettes (768 px - 991 px)
+
+    Ordinateurs (992 px - 1199 px)
+
+    Grands écrans d'ordinateurs et télévisions
