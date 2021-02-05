@@ -514,19 +514,19 @@ footer > section{
         gap: 40px;
     }
     
-    #activities #port img{
+    #activities #port div{
         height: 370px;
     }
 
-    #activities #calanques img{
+    #activities #calanques div{
         height: 370px;
     }
 
-    #activities #fort img{
+    #activities #fort div{
         height: 200px;
     }
 
-    #activities #frioul img{
+    #activities #frioul div{
         height: 100px;
     }
  
