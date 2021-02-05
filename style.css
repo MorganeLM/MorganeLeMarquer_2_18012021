@@ -238,7 +238,7 @@ h1{
 }
 
 #popular-accommodations article > div:first-child{
-    flex: 2;
+    flex: 1;
 }
 
 #popular-accommodations article div:first-child img{
@@ -250,7 +250,7 @@ h1{
 }
 
 #popular-accommodations article > div:last-child{
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -278,14 +278,19 @@ h1{
 }
 
 #accommodation-list article{
+    background-color: white;
     border: 3px solid white;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 
+#accommodation-list article div:first-child{
+    height: 120px;
+}
+
 #accommodation-list article div:first-child img{
     width: 100%;
-    height: 120px;
+    height: 100%;
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -296,8 +301,8 @@ h1{
 }
 
 #accommodation-list article > a > div:last-child p{
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   
 }
 
@@ -327,9 +332,13 @@ h1{
     margin-bottom: 20px;
 }
 
+#activities article div:first-child{
+    height: 150px;
+}
+
 #activities article div:first-child img{
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
     object-position: top center;
     border-top-right-radius: 20px;
