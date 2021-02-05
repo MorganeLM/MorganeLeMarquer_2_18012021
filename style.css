@@ -210,22 +210,24 @@ h1{
 }
 
 
-/* LES PLUS POPULAIRES */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- LES PLUS POPULAIRES ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 #popular-accommodations{
     padding: 20px;
     background-color: #f2f2f2;
 }
 
+/* Titre + icone */
 #popular-accommodations > div:first-child{
     display: flex;
     justify-content: space-between;
 }
-
+/* Alignement vertical de l'icone */
 #popular-accommodations > div:first-child > div{
     align-self:center;
     font-size: 1.5em;
 }
 
+/* Mise en formes des cartes */
 #popular-accommodations article{
     display: flex;
     height: 160px;
@@ -236,12 +238,12 @@ h1{
 }
 
 #popular-accommodations article > div:first-child{
-    flex: 1;
+    flex: 2;
 }
 
 #popular-accommodations article div:first-child img{
-    width: 140px;
-    height: 160px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -252,7 +254,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    padding: 15px 30px 15px 20px;   
+    padding: 15px 20px;   
 }
 
 #popular-accommodations .fa-star{
