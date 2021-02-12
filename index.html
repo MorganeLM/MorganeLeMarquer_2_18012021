@@ -5,63 +5,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia</title>
         
-        <!-- <script src="https://kit.fontawesome.com/7246861bbd.js" crossorigin="anonymous"></script> -->
+        <!-- Fontawesome -->
         <script src="fontawesome-free-5.15.2-web/js/all.min.js" crossorigin="anonymous"></script>
         <!-- CSS links -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap" rel="stylesheet">
-
-        <!-- <link rel="stylesheet" href="normalize.css">  -->
         <link rel="stylesheet" href="style.css">
     </head>
 
 
     <body>
         <div id="container">
+<!-- - - - HEADER - - - -->
         <header>
             <div>
                 <div>
                     <img src="images/logo/Reservia@3x.png" alt="logo de Reservia">
                 </div>
-                <p id="signup_mobile"><a href="#">S'inscrire</a></p>
             </div>
             <nav>
                 <div><a href="#accommodation-list">Hébergements</a></div>
                 <div><a href="#activities">Activités</a></div>
-                <div id="signup_desktop"><a href="#">S'inscrire</a></div>
             </nav>
+            <div id="signup"><a href="#">S'inscrire</a></div>
         </header>
         
+<!-- - - - MAIN - - - -->
             <main>
+<!-- Bloc Filtre -->
                 <section id="filter">
                     <h1>Trouvez votre Hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-                    <form action="#" type="post" id="filter-form">
+                    <form action="#" method="post" id="filter-form">
                         <label id="map-marker" for="location">
-                            <i class="fas fa-map-marker-alt"></i></i>
+                            <i class="fas fa-map-marker-alt"></i>
                         </label>
-                        <input name"location" type="text" placeholder="Marseille, France">
+                        <input id="location" type="text" placeholder="Marseille, France">
                         <button id="search">
                             <i class="fas fa-search"></i>
                             <span>Rechercher</span>
                         </button>
                     </form>
                     
-                    <h3>Filtres</h3>
                     <div id="filter-tags">
                         <h3>Filtres</h3>
                         <div>
+                            <div>
+                                <div class="filter-tag">
+                                    <span></span><i class="fas fa-money-bill-wave"></i> Économique
+                                </div>
+                                <div  class="filter-tag">
+                                    <span></span><i class="fas fa-child"></i> Familial
+                                </div>
+                            </div>
                             <div class="filter-tag">
-                                <span></span><i class="fas fa-money-bill-wave"></i> Économique
+                                <span></span><i class="fas fa-heart"></i> Romantique
                             </div>
-                            <div  class="filter-tag">
-                                <span></span><i class="fas fa-child"></i> Familial
+                            <div class="filter-tag">
+                                <span></span><i class="fas fa-dog"></i> Animaux autorisés
                             </div>
-                        </div>
-                        <div class="filter-tag">
-                            <span></span><i class="fas fa-heart"></i> Romantique
-                        </div>
-                        <div class="filter-tag">
-                            <span></span><i class="fas fa-dog"></i> Animaux autorisés
                         </div>
                     </div>
         
@@ -71,8 +72,8 @@
                     </div>
                 </section>
         
-<!-- Hébergements -->
-                <section id="accommodations">
+<!-- Bloc Hébergements -->
+                <div id="accommodations">
         
                     <aside id="popular-accommodations">
                         <div>
@@ -260,9 +261,9 @@
                         </div>
                     </section>
         
-                </section>
+                </div>
         
-<!-- Activités -->
+<!-- Bloc Activités -->
                 <section id="activities">
                     <h2>Activités à Marseille</h2>
                     <div>
@@ -324,6 +325,7 @@
             </main>   
         </div>
 
+<!-- - - - FOOTER - - - -->
         <footer>
             <section>
                 <h3>A propos</h3>

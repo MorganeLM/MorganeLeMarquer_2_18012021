@@ -5,7 +5,6 @@ body{
     padding: 0;
 }
 
-
 a{
     color: initial;
     text-decoration: none;
@@ -26,25 +25,21 @@ header > div{
     padding: 20px;
 }
 
-header > div a{
-    font-weight: 600;
-    margin-top: 12px;
-    display: block;
-    color: #0065FC;
-}
-
 header > div > div > img{
     width: 130px;
 }
 
 /* Nav */
-header > nav{
-    display: flex;
-    justify-content: space-between;
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
-#signup_desktop{
-    display: none;
+header > nav{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 
 header > nav > div{
@@ -54,12 +49,21 @@ header > nav > div{
     padding-bottom: 15px;
 }
 
-header > nav > div:first-child{
+#signup{
+    justify-content: flex-end;
+}
+
+#signup a{
+    color: #0065FC;
+    font-weight: 600;
+}
+
+header > nav > div:hover{
     border-bottom: 3px solid #0065FC;
 }
 
 
-header > nav > div:first-child a{
+header > nav > div:hover a{
     color: #0065FC;
 }
 
@@ -84,6 +88,11 @@ h1{
 #filter input{
     padding: 10px;
     border: none;
+    width: 80%;
+}
+
+#filter input:focus{
+    outline: none;;
 }
 
 #filter input::placeholder{
@@ -96,6 +105,7 @@ h1{
     border: 1px solid #f2f2f2;
     border-radius: 10px;
     width: 100%;
+    margin: 20px 0;
 }
 
 #filter > div div i{
@@ -139,10 +149,6 @@ h1{
     margin-top: 20px;
 }
 
-#filter-tags h3{
-    display: none;
-}
-
 .filter-tag{
     position: relative;
     border: 2px solid #d9d9d9;
@@ -150,10 +156,9 @@ h1{
     padding: 12px;
     padding-left: 40px;
     padding-right: 15px;
-    margin-bottom: 10px;
     width: max-content;
     font-weight: bold;
-    margin-right: 20px;
+    margin:  10px 20px 10px 0;
 }
 
 .filter-tag:hover{
@@ -162,7 +167,16 @@ h1{
 }
 
 #filter-tags > div:first-of-type{
+    position: relative;
+    left: 10px;
+}
+
+#filter-tags > div > div:first-of-type{
     display: flex;
+}
+
+#filter-tags > div > div:first-of-type > .filter-tag{
+    margin:  0 20px 0 0;
 }
 
 .filter-tag span{
@@ -366,6 +380,28 @@ footer > section{
 /* ---------------------------- MEDIA QUERIES ----------------------------- */
 /* RESPONSIVE GRAND MOBILE / TABLETTE */
 @media screen and (min-width: 550px){
+    #filter-form{
+        width: 350px;
+    }
+
+    #search > span{
+        display: initial;
+        font-size: 1.2em;
+    }
+
+    .fa-search{
+        display: none;
+    }
+
+    #search{
+        width: 110px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        position: absolute;
+        right: 0;
+    }
     article{
         max-width: 400px;
         margin: auto;
@@ -380,17 +416,58 @@ footer > section{
 
 /* RESPONSIVE TABLETTE / PETIT ECRAN ORDINATEUR*/
 @media screen and (min-width: 900px){
+    header{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 60% 2fr 1fr;
+        margin: 0 0 0 40px;
+    }
 
-    #filter h3{
-        display: none;
+    header > nav {
+        grid-column: 2/3; 
+        grid-row: 1/2; 
+        height: 100%; 
+    }
+
+    header > div{
+        padding-left: 0;
+    }
+
+    header > nav > div{
+        margin-left: 30px;
+        text-align: center;
+        border-bottom: none;
+        padding-bottom: 0;
+        padding-top: 43px;
+        height: 100%;
+    }
+
+
+    #signup{
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    header > nav > div{
+        border-top: 3px solid white;
+    }
+
+    header > nav > div:hover{
+        border-bottom: none;
+        border-top: 3px solid #0065FC;
+    }
+    
+
+    #filter-tags{
+        display: flex;
     }
 
     #filter-tags h3{
-        display: initial;
         margin-right: 30px;
+        align-self: center;
     }
 
-    #filter-tags{
+    #filter-tags > div:first-of-type{
         display: flex;
         flex-direction: row;
         align-items: baseline;
@@ -457,67 +534,8 @@ footer > section{
         left: initial;
     }
 
-    header{
-        display: flex;
-        justify-content: space-between;
-        margin: 0 40px 0 40px;
-    }
-
-    header > div{
-        padding-left: 0;
-    }
-
-    header > nav > div{
-        padding: 40px 20px 0 20px;
-        margin-left: 30px;
-        text-align: center;
-        border-bottom: none;
-    }
-
-    header > nav > div:first-child{
-        border-top: 3px solid #0065FC;
-        border-bottom: none;
-    }
-
-    #signup_mobile{
-        display: none;
-    }
-
-    #signup_desktop{
-        display: initial;
-    }
-
-    #signup_desktop a{
-        font-weight: 600;
-        margin-top: 12px;
-        color: #0065FC;
-    }
-
     #filter{
         padding: 0 40px;
-    }
-
-    #filter-form{
-        width: 350px;
-    }
-
-    #search > span{
-        display: initial;
-        font-size: 1.2em;
-    }
-
-    .fa-search{
-        display: none;
-    }
-
-    #search{
-        width: 110px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        position: absolute;
-        right: 0;
     }
 
 
