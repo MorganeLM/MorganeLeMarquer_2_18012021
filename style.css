@@ -1,6 +1,83 @@
+/* ---------------------------------------- */
+/* ==            SUMMARY              */
+/*---------------------------------------- */
+
+/* L        - 1 - */
+/* L        - 2 - */
+/* L        - 3 - */
+
+/* ---------------------------------------- */
+/* ==       COLOR CODES           */
+/*---------------------------------------- */
+/*
+Blue (brand, icons, links): #0065FC
+Light blue (icon background, filters): #DEEBFF 
+Grey (bloc background): #F2F2F2.
+*/
+
+/* ---------------------------------------- */
+/* == DÉFINITIONS DES POLICES*/
+/*---------------------------------------- */
+/* Raleway */
+
+/* ---------------------------------------- */
+/* == ÉLÉMENTS PRINCIPAUX */
+/*---------------------------------------- */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/* ---------------------------------------- */
+/* ==            HEADER                */
+/*---------------------------------------- */
+
+/*     Navigation      */
+
+/*     Slider      */
+
+/* ---------------------------------------- */
+/* ==            SECTION                */
+/*---------------------------------------- */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/* ---------------------------------------- */
+/* ==            SECTION                */
+/*---------------------------------------- */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/* ---------------------------------------- */
+/* ==            FOOTER                 */
+/*---------------------------------------- */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/* ---------------------------------------- */
+/* ==       MEDIAS QUERIS        */
+/*---------------------------------------- */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+
+
 body{
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     margin: 0;
     padding: 0;
 }
@@ -154,7 +231,7 @@ h1{
     border: 2px solid #d9d9d9;
     border-radius: 30px;
     padding: 12px;
-    padding-left: 40px;
+    padding-left: 45px;
     padding-right: 15px;
     width: max-content;
     font-weight: bold;
@@ -168,7 +245,7 @@ h1{
 
 #filter-tags > div:first-of-type{
     position: relative;
-    left: 10px;
+    left: 8px;
 }
 
 #filter-tags > div > div:first-of-type{
@@ -182,7 +259,7 @@ h1{
 .filter-tag span{
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 13px;
     transform: translate(-50%, -50%);
     background-color: #DEEBFF ;
     padding: 23px;
@@ -192,7 +269,7 @@ h1{
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 13px;
     transform: translate(-50%, -50%);
     color: #0065FC;
 }
