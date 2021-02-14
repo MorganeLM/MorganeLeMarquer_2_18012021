@@ -8,6 +8,7 @@ Grey (bloc background): #F2F2F2.
 /*          FONT           */
 /* Raleway */
 
+
 /* ----------------------------------------- */
 /*          SUMMARY                         */
 /*---------------------------------------- */
@@ -591,10 +592,6 @@ footer > section{
 
 /*  RESPONSIVE COMPUTER SCREEN >1200px */
 @media screen and (min-width: 1200px){
-    body{
-        font-size: 14px;
-    }
-
     header{
         margin: 0 0 0 20px;
     }
