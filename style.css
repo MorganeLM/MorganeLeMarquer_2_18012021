@@ -1,79 +1,52 @@
-/* ---------------------------------------- */
-/* ==            SUMMARY              */
-/*---------------------------------------- */
-
-/* L        - 1 - */
-/* L        - 2 - */
-/* L        - 3 - */
-
-/* ---------------------------------------- */
-/* ==       COLOR CODES           */
-/*---------------------------------------- */
+/*          COLOR CODES           */
 /*
 Blue (brand, icons, links): #0065FC
 Light blue (icon background, filters): #DEEBFF 
 Grey (bloc background): #F2F2F2.
 */
 
-/* ---------------------------------------- */
-/* == DÉFINITIONS DES POLICES*/
-/*---------------------------------------- */
+/*          FONT           */
 /* Raleway */
 
-/* ---------------------------------------- */
-/* == ÉLÉMENTS PRINCIPAUX */
+/* ----------------------------------------- */
+/*          SUMMARY                         */
 /*---------------------------------------- */
 
-/*     sous partie      */
+/*  == GENERAL      */
 
-/*     sous partie      */
+/*  == HEADER      */
+/*  Nav */
+/*  Signup */
 
-/*     sous partie      */
+/*  == MAIN     */
+/*  == SECTION FILER    */
+/*  == SECTION POPULAR ACCOMMODATIONS     */
+/*  == SECTION ACCOMMODATIONS LIST       */
+/*  == SECTION ACTIVITIES       */
+
+/*  == FOOTER     */
+
 
 /* ---------------------------------------- */
-/* ==            HEADER                */
-/*---------------------------------------- */
+/* == MEDIAS QUERIES                       */
+/*--------------------------------------- */
 
-/*     Navigation      */
+/*  RESPONSIVE LARGE MOBILE / TABLET >550px */
 
-/*     Slider      */
+/*  RESPONSIVE TABLET / SMALL COMPUTER SCREEN >900px */
+
+/*  RESPONSIVE COMPUTER SCREEN >1200px */
+
+/*  RESPONSIVE LARGE COMPUTER SCREEN >1500px */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
 
 /* ---------------------------------------- */
-/* ==            SECTION                */
-/*---------------------------------------- */
-
-/*     sous partie      */
-
-/*     sous partie      */
-
-/*     sous partie      */
-
-/* ---------------------------------------- */
-/* ==            SECTION                */
-/*---------------------------------------- */
-
-/*     sous partie      */
-
-/*     sous partie      */
-
-/* ---------------------------------------- */
-/* ==            FOOTER                 */
-/*---------------------------------------- */
-
-/*     sous partie      */
-
-/*     sous partie      */
-
-/* ---------------------------------------- */
-/* ==       MEDIAS QUERIS        */
-/*---------------------------------------- */
-
-/*     sous partie      */
-
-/*     sous partie      */
-
-
-
+/* == GENERAL                              */
+/*--------------------------------------- */
 body{
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
@@ -95,24 +68,22 @@ article{
     box-shadow: 0px 0px 7px grey;
 }
 
-/* ---------------------------- HEADER ------------------------------------ */
-header > div{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
 
-header > div > div > img{
-    width: 130px;
-}
-
-/* Nav */
+/* ---------------------------------------- */
+/* == HEADER                               */
+/*--------------------------------------- */
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
+header > div > img{
+    width: 90px;
+    padding: 20px;
+}
+
+/*  Nav */
 header > nav{
     display: flex;
     grid-column: 1/3;
@@ -126,8 +97,18 @@ header > nav > div{
     padding-bottom: 15px;
 }
 
+header > nav > div:hover{
+    border-bottom: 3px solid #0065FC;
+}
+
+header > nav > div:hover a{
+    color: #0065FC;
+}
+
+/*  Signup */
 #signup{
-    justify-content: flex-end;
+    text-align: right;
+    padding-right: 20px;
 }
 
 #signup a{
@@ -135,18 +116,11 @@ header > nav > div{
     font-weight: 600;
 }
 
-header > nav > div:hover{
-    border-bottom: 3px solid #0065FC;
-}
 
-
-header > nav > div:hover a{
-    color: #0065FC;
-}
-
-
-/* ---------------------------- MAIN ------------------------------------- */
-/* SECTION 1 -> FILTER */
+/* ---------------------------- == MAIN ------------------------------------- */
+/* ---------------------------------------- */
+/* == SECTION FILER                        */
+/*--------------------------------------- */
 h1{
     font-weight: 700;
 }
@@ -297,30 +271,32 @@ h1{
 }
 
 
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- LES PLUS POPULAIRES ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------- */
+/* == SECTION POPULAR ACCOMMODATIONS       */
+/*--------------------------------------- */
 #popular-accommodations{
     padding: 20px;
     background-color: #f2f2f2;
 }
 
-/* Titre + icone */
+/* Title and icon positions */
 #popular-accommodations > div:first-child{
     display: flex;
     justify-content: space-between;
 }
-/* Alignement vertical de l'icone */
+/* Icon vertical alignment */
 #popular-accommodations > div:first-child > div{
-    align-self:center;
+    align-self: center;
     font-size: 1.5em;
 }
 
-/* Mise en formes des cartes */
+/* Cards */
 #popular-accommodations article{
     display: flex;
     height: 160px;
     background-color: white;
-    border: 4px solid white;
-    border-radius: 20px;
+    border: 5px solid white;
+    border-radius: 23px;
     margin: 20px 0px;
 }
 
@@ -358,7 +334,9 @@ h1{
 }
 
 
-/* HEBERGEMENTS A MARSEILLE */
+/* ---------------------------------------- */
+/* == SECTION ACCOMMODATIONS LIST          */
+/*---------------------------------------- */
 #accommodation-list{
     padding: 20px;
     background-color: #f6f6f6 ;
@@ -366,8 +344,8 @@ h1{
 
 #accommodation-list article{
     background-color: white;
-    border: 3px solid white;
-    border-radius: 20px;
+    border: 5px solid white;
+    border-radius: 23px;
     margin-bottom: 20px;
 }
 
@@ -390,7 +368,6 @@ h1{
 #accommodation-list article > a > div:last-child p{
     margin-top: 5px;
     margin-bottom: 5px;
-  
 }
 
 #accommodation-list article > a > div:last-child div{
@@ -409,7 +386,9 @@ h1{
 }
 
 
-/* ACTIVITES A MARSEILLE */
+/* ----------------------------------------- */
+/* == SECTION ACTIVITIES                    */
+/*---------------------------------------- */
 #activities{
     padding: 20px;
 }
@@ -442,7 +421,9 @@ h1{
 }
 
 
-/* ---------------------------- FOOTER ----------------------------------- */
+/* ---------------------------------------- */
+/* == FOOTER                               */
+/*--------------------------------------- */
 footer{
     background-color: #f2f2f2;
     padding: 40px;
@@ -453,10 +434,13 @@ footer > section{
 }
 
 
+/* ---------------------------------------- */
+/* == MEDIAS QUERIES                       */
+/*--------------------------------------- */
 
-/* ---------------------------- MEDIA QUERIES ----------------------------- */
-/* RESPONSIVE GRAND MOBILE / TABLETTE */
+/*  RESPONSIVE LARGE MOBILE / TABLET >550px */
 @media screen and (min-width: 550px){
+    /* Filter form */
     #filter-form{
         width: 350px;
     }
@@ -479,6 +463,8 @@ footer > section{
         position: absolute;
         right: 0;
     }
+
+    /* Cards */
     article{
         max-width: 400px;
         margin: auto;
@@ -491,13 +477,13 @@ footer > section{
     
 }
 
-/* RESPONSIVE TABLETTE / PETIT ECRAN ORDINATEUR*/
+/*  RESPONSIVE TABLET / SMALL COMPUTER SCREEN >900px */
 @media screen and (min-width: 900px){
+    /* Header */
     header{
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 60% 2fr 1fr;
-        margin: 0 0 0 40px;
     }
 
     header > nav {
@@ -510,19 +496,22 @@ footer > section{
         padding-left: 0;
     }
 
+    header > div:first-child > img{
+        padding-top: 30px;
+    }
+
     header > nav > div{
         margin-left: 30px;
         text-align: center;
         border-bottom: none;
         padding-bottom: 0;
-        padding-top: 43px;
+        padding-top: 45px;
         height: 100%;
     }
 
-
     #signup{
-        justify-content: center;
-        padding-right: 0;
+        text-align: center;
+        padding-top: 18px;
     }
 
     header > nav > div{
@@ -534,7 +523,7 @@ footer > section{
         border-top: 3px solid #0065FC;
     }
     
-
+    /* Filter */
     #filter-tags{
         display: flex;
     }
@@ -559,6 +548,7 @@ footer > section{
         margin-bottom: 20px;
     }
 
+    /* Cards */
     .left{
         position: relative;
         right: 15%;
@@ -569,7 +559,7 @@ footer > section{
         left: 15%;
     }
 
-
+    /* Accommodations */
     #accommodations article{
         width: 100%;
     }
@@ -578,7 +568,8 @@ footer > section{
         margin: 20px auto;
     }
 
-    #accommodation-list{
+    #accommodation-list-cards{
+        margin: 40px 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
@@ -589,18 +580,34 @@ footer > section{
         margin-bottom: 0;
     }
 
+    /* Footer */
     footer{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-  
-
 
 }
 
 
-/* RESPONSIVE ECRAN ORDINATEUR */
+/*  RESPONSIVE COMPUTER SCREEN >1200px */
 @media screen and (min-width: 1200px){
+    body{
+        font-size: 14px;
+    }
+
+    header{
+        margin: 0 0 0 20px;
+    }
+
+    #popular-accommodations{
+        padding: 20px 40px;
+    }
+
+    #accommodation-list{
+        padding: 20px 40px;
+    }
+
+    /* Cards */
     .left{
         position: initial;
         right: initial;
@@ -611,12 +618,12 @@ footer > section{
         left: initial;
     }
 
+    /* Filter */
     #filter{
         padding: 0 40px;
     }
 
-
-    /* HEBERGEMENTS */
+    /* Accommodations */
     #accommodations{
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -637,9 +644,6 @@ footer > section{
     #accommodation-list{
         grid-column: 1/2;
         grid-row: 1/2;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
         border-radius: 20px;
     }
 
@@ -648,8 +652,7 @@ footer > section{
         margin-bottom: 0;
     }
 
-
-    /* ACTIVITES */
+    /* Activities */
     #activities{
         padding: 30px 40px;
     }
@@ -679,7 +682,7 @@ footer > section{
 }
 
 
-/* RESPONSIVE TRES GRAND ECRAN ORDINATEUR*/
+/* RESPONSIVE LARGE COMPUTER SCREEN >1500px */
 @media screen and (min-width: 1500px){
     #container{
         width: 1500px;
